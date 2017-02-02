@@ -40,9 +40,41 @@ print (8 ** (1/3))
 # you can use parentheses to combine mathematical operations into
 # more complicated expressions. Python will evaluate the expression
 # following the standard PEMDAS rule for the order of
-# calculations—parentheses, exponents, multiplication, division, addition,
-# and subtraction. Consider the following two expressions—one without
+# calculations-parentheses, exponents, multiplication, division, addition,
+# and subtraction. Consider the following two expressions-one without
 # parentheses and one with:
 
 print (5 + 5 * 5)
 print ((5 + 5) * 5)
+
+# As we start designing more complex Python programs,
+# we'll assign names to numbers -at times for convenience,
+# but mostly out of necessity. Here's a simple example:
+
+a = 3
+print (a + 1)
+a = 5
+print (a + 1)
+
+print (type(3))
+print (type(3.5))
+print (type(3.0))
+print (int(3.8))
+print (int(3.0))
+print (float(3))
+
+from fractions import Fraction
+f = Fraction(3, 4)
+print (f)
+print (Fraction(3, 4) + 1 + 1.5)
+print (Fraction(3, 4) + 1 + Fraction(1/4))
+
+a = 2 + 3j
+print (type(a))
+a = complex(2, 3)
+print (a)
+b = 3 + 3j
+print (a + b)
+print (a - b)
+print (a * b)
+print (a / b)
